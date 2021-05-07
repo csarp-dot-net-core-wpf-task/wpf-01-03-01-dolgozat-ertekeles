@@ -4,6 +4,8 @@
 Készítsen WPF alkalmazást, amely a megadott tanuló név és dolgozatban elért százalékos eredmény esetén megadja a diák értékelését.
 A WPF alkalmazás váza legyen a következő:  
 
+![image](https://user-images.githubusercontent.com/6060514/117416736-f8507e00-af19-11eb-9f59-c9febe39efbf.png)
+
 
 Használj fel a model mappában lévő DiakErtekeles osztályt.  
 Az első két szövegbeviteli mezőt kösse a „Nev” és „Eredmeny” tulajdonságokhoz. Ezeket a felhasználó adja meg!  
