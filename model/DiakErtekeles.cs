@@ -2,72 +2,57 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace oop.model
+namespace oop.Model
 {
     /// <summary>
     /// Diákok dolgozatának értékelése
     /// </summary>
-    class DiakErtekeles
+    class StudentMark
     {
         /// <summary>
         /// A diák neve
         /// </summary>
-        private string nev;
+        private string name;
         /// <summary>
-        /// A diák dolgozatának eredménye
+        /// A diák dolgozatának ponteredménye
         /// </summary>
-        private int eredmeny;
+        private int point;
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="name"></param>
         /// <param name="eredmeny"></param>
-        public DiakErtekeles()
+        public StudentMark()
         {
-            this.nev = string.Empty;
-            this.eredmeny = 0;
+            this.name = string.Empty;
+            this.point = 0;
         }
 
         /// <summary>
         /// Diák név tulajdonsága amelyet a felhasználó ad meg
         /// </summary>
-        public string Nev
+        public string Name
         {
-            set
-            {
-                nev = value;
-            }
         }
 
         /// <summary>
         /// Diák dolgozatban elért eredménye amit a felhasználó ad meg
         /// </summary>
-        public int Eredmeny
+        public int Point
         {
-            set
-            {
-                eredmeny = value;
-            }
         }
 
         /// <summary>
         /// Az eredmény alapján a diák jegye
         /// </summary>
-        public int Ertekeles
+        public int Mark
         {
             get
             {
-                if (eredmeny > 85)
+                if (point > 85)
                     return 5;
-                else if (eredmeny > 70)
-                    return 4;
-                else if (eredmeny > 55)
-                    return 3;
-                else if (eredmeny > 40)
-                    return 2;
-                else
-                    return 1;
+                else 
             }
         }
 
@@ -75,31 +60,16 @@ namespace oop.model
         /// <summary>
         /// Az elért eredmény alapján a szöveges értékelés
         /// </summary>
-        public string SzovegesErtekeles
+        public string MarkString
         {
             get
             {
-                string szovegesErtkeles = nev + " diák ";
-                switch (Ertekeles)
+                string markString = name + " diák ";
+                switch (Mark)
                 {
-                    case 5:
-                        szovegesErtkeles += "jeles";
-                        break;
-                    case 4:
-                        szovegesErtkeles += "jó";
-                        break;
-                    case 3:
-                        szovegesErtkeles += "közepes";
-                        break;
-                    case 2:
-                        szovegesErtkeles += "elégséges";
-                        break;
-                    case 1:
-                        szovegesErtkeles += "elégtelen";
-                        break;
                 }
-                szovegesErtkeles += " eredményt ért el.";
-                return szovegesErtkeles;
+                markString += " eredményt ért el.";
+                return markString;
             }
         }
     }
