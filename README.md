@@ -6,7 +6,7 @@ Készítsen WPF alkalmazást, amely egy megadott nevű diák jegyét határozza 
 
 A WPF alkalmazás váza Grid elrendezés esetén legyen a következő:  
 
-![image](https://user-images.githubusercontent.com/6060514/117416736-f8507e00-af19-11eb-9f59-c9febe39efbf.png)
+![image](https://github.com/csarp-dotnet-core-wpf-task/wpf-01-04-01-mark/blob/main/dolgozat_ertekeles.png)
 
 StackPanel elrendezét is használhat.
 
