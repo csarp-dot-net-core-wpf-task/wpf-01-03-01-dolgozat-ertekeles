@@ -4,7 +4,7 @@
 Készítsen WPF alkalmazást, amely egy megadott nevű diák jegyét határozza meg. A program diák dolgozatban elért százalékos eredmény esetén megadja a diák értékelését.
 
 
-A WPF alkalmazás váza Grid elrendezés esetén legyen a következő:  
+A WPF alkalmazás váza StackPanel elrendezés esetén legyen a következő:  
 
 ![image](https://github.com/csarp-dotnet-core-wpf-task/wpf-01-04-01-mark/blob/main/dolgozat_ertekeles.png)
 
